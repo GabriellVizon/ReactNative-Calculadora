@@ -4,6 +4,8 @@ export default function Botao(props){
     const estilosBotao = [styles.Botao]
     if(props.triplo) estilosBotao.push(styles.BotaoTriplo)
     if(props.duplo) estilosBotao.push(styles.BotaoDuplo)
+    if(props.operacao) estilosBotao.push(styles.BotaoOperacao)
+
 
     return (
         <TouchableHighlight>
@@ -28,5 +30,9 @@ const styles = StyleSheet.create({
     },
     BotaoDuplo: {
         width: Dimensions.get('screen').width / 4 * 1.999
+    },
+    BotaoOperacao: {
+        backgroundColor: '#669',
+        color: 'white'
     }
 })
