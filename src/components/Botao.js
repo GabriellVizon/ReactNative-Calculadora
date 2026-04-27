@@ -8,7 +8,7 @@ export default function Botao(props){
 
 
     return (
-        <TouchableHighlight>
+        <TouchableHighlight onPress={() => props.onClick(props.label)}>
             <Text style={estilosBotao}>{props.label}</Text>
         </TouchableHighlight>
     )
